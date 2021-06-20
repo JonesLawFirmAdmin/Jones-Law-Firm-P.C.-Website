@@ -321,6 +321,23 @@ padding-bottom: 2rem;
 
 }
 
+/*styles for the testimonial page*/
+.about_section a {
+		background-color: var(--brunswick-green);
+		text-decoration: none;
+		color: var(--sage);
+		border-radius: 0.25rem;
+}
+
+/*styles for the contact page*/
+
+#contact_form_holder {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 1rem;
+}
+
 /*for the future, I need to use this to make the mobile website better*/
 @media screen and (max-width: 1000px){
 	.content_card img {
