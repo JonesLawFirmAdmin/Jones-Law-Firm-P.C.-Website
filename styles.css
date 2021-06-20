@@ -163,6 +163,20 @@ html {
 	flex: 1;
 }
 
+.button_floating_scroll_top {
+	position: fixed;
+	bottom: 8vw;
+	right: 2vw;
+	background-color: var(--brunswick-green);
+	padding: 0.75rem;
+	text-decoration: none;
+ 	border-bottom: 0.25rem solid var(--smoky-black);
+	border-radius: 0.25rem;
+	color: var(--sage);
+	font-weight: 1000;
+	flex: 1;
+}
+
 .button_more {
 	position: absolute;
 	bottom: 0;
@@ -188,6 +202,8 @@ html {
 	justify-content: space-between;
 	flex: 1;
 }
+
+
 
 #pic_street_view {
 	border-radius: 0.25rem;
@@ -253,10 +269,70 @@ html {
 	border-top: 0.25rem solid var(--brunswick-green);
 }
 
+/*specific to the about page*/
+.about_section {
+padding: 1rem;
+padding-bottom: 2rem;
 
+}
 
+.lawyer_spotlight {
+	display: block;
+}
+.lawyer_spotlight:first-child {
+	align-items: center;
+}
+
+.about_section h1 {
+	color: var(--brunswick-green);
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.about_section p {
+	text-align: justify;
+	margin-bottom: 1rem;
+		line-height: 1.3;
+}
+
+.lawyer_name_and_pic {
+	margin: 1rem;
+	position: relative;
+	display: flex;
+	height: 50vh;
+	width: 90vw;
+	background-color: inherit;
+	border: none;
+	justify-content: space-between;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 0.25rem solid var(--brunswick-green);
+}
+
+.lawyer_name_and_pic img {
+	border-radius: 0.25rem;
+	border: 0.25rem solid white;
+	margin: 1rem;
+	position: relative;
+	height: 100%;
+	width: auto;
+
+}
 
 /*for the future, I need to use this to make the mobile website better*/
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1000px){
+	.content_card img {
+		border-radius: 0.25rem;
+		border: 0.25rem solid white;
+		margin: 1rem;
+		position: relative;
+		height: 95%;
+		width: auto;
+	}
 
+	#motto {
+		display: none;
+	}
   }
