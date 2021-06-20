@@ -134,6 +134,7 @@ html {
 
 .background_color:nth-of-type(even) {
 	background-color:  var(--metallic-sunburst);
+	color: var(--smoky-black);
 }
 
 .background_color:nth-of-type(1) {
@@ -146,41 +147,74 @@ html {
 
 /*end sizing of colored boxes*/
 
-#pic_bryce_34th {
-	height: 55vh;
-}
+
 
 .button_scroll_up {
 	position: absolute;
-	bottom: 2vw;
-	background-color: var(--xanadu);
+	bottom: 0;
+	right: 2vw;
+	background-color: var(--brunswick-green);
 	padding: 0.75rem;
 	text-decoration: none;
  	border-bottom: 0.25rem solid var(--smoky-black);
 	border-radius: 0.25rem;
 	color: var(--sage);
 	font-weight: 1000;
+	flex: 1;
 }
 
-.button_scroll_up:nth-of-type(even) {
-	left: 2vw;
+.button_more {
+	position: absolute;
+	bottom: 0;
+	right: 8vw;
+	background-color: var(--brunswick-green);
+	padding: 0.75rem;
+	text-decoration: none;
+	border-bottom: 0.25rem solid var(--smoky-black);
+	border-radius: 0.25rem;
+	color: var(--sage);
 }
 
-.button_scroll_up:nth-of-type(odd) {
-	right: 2vw;
-}
 
 .content_card {
+	position: relative;
 	display: flex;
-	background: white;
-	max-height: 70vh;
+	height: 70vh;
 	width: 90vw;
-	border-top: 0.25rem solid white;
-	border-left: 0.25rem solid white;
-	border-right: 0.25rem solid white;
+	background-color: inherit;
+	border: none;
 	border-bottom: 0.25rem solid var(--brunswick-green);
 	border-radius: 0.25rem;
 	justify-content: space-between;
+	flex: 1;
+}
+
+#pic_street_view {
+	border-radius: 0.25rem;
+	border: 0.25rem solid var(--sage);
+	margin: 1rem;
+}
+
+#pic_justice {
+	border-radius: 0.25rem;
+	border: 0.25rem solid var(--metallic-sunburst);
+	margin: 1rem;
+}
+
+#pic_nysupreme {
+	border-radius: 0.25rem;
+	border: 0.25rem solid var(--sage);
+	margin: 1rem;
+}
+
+
+.display_text {
+	align-items: center;
+	text-align: center;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+	padding: 2rem;
 }
 
 .top_text {
@@ -190,7 +224,6 @@ html {
 }
 
 .additional_text {
-	color: var(--metallic-sunburst);
 	font-family: 'Viaoda Libre', serif;
 	font-size: 2rem;
 }
@@ -221,18 +254,7 @@ html {
 }
 
 
-.display_text {
-	align-items: center;
-	text-align: center;
-	display: flex;
-	flex-flow: column;
-	justify-content: space-around;
-	padding: 2rem;
-}
 
-.content_card:nth-last-of-type(even) {
-	flex-direction: row-reverse;
-}
 
 /*for the future, I need to use this to make the mobile website better*/
 @media screen and (max-width: 768px){
