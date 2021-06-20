@@ -117,6 +117,11 @@ html {
 }
 
 
+.nav_bar_button {
+	text-decoration: none;
+	color: var(--sage);
+}
+
 /*all this does is make the colored boxes the right size*/
 .background_color {
 	width: 100%;
@@ -124,6 +129,7 @@ html {
 	justify-content: center;
 	align-items: center;
 	display: flex;
+	position: relative;
 }
 
 .background_color:nth-of-type(even) {
@@ -140,6 +146,69 @@ html {
 
 /*end sizing of colored boxes*/
 
+#pic_bryce_34th {
+	height: 55vh;
+}
+
+.button_scroll_up {
+	position: absolute;
+	bottom: 2vw;
+	background-color: var(--xanadu);
+	padding: 0.75rem;
+	text-decoration: none;
+ 	border-bottom: 0.25rem solid var(--smoky-black);
+	border-radius: 0.25rem;
+	color: var(--sage);
+	font-weight: 1000;
+}
+
+.button_scroll_up:nth-of-type(even) {
+	left: 2vw;
+}
+
+.button_scroll_up:nth-of-type(odd) {
+	right: 2vw;
+}
+
+.content_card {
+	display: flex;
+	background: white;
+	max-height: 70vh;
+	width: 90vw;
+	border-top: 0.25rem solid white;
+	border-left: 0.25rem solid white;
+	border-right: 0.25rem solid white;
+	border-bottom: 0.25rem solid var(--brunswick-green);
+	border-radius: 0.25rem;
+	justify-content: space-between;
+}
+
+.top_text {
+	font-family: 'Viaoda Libre', serif;
+	font-size: 4rem;
+	color: var(--brunswick-green);
+}
+
+.additional_text {
+	color: var(--metallic-sunburst);
+	font-family: 'Viaoda Libre', serif;
+	font-size: 2rem;
+}
+
+#intro_content {
+	display: flex;
+	background: white;
+	max-height: 70vh;
+	width: 90vw;
+	border-top: 0.25rem solid white;
+	border-left: 0.25rem solid white;
+	border-right: 0.25rem solid white;
+	border-bottom: 0.25rem solid var(--brunswick-green);
+	border-radius: 0.25rem;
+	justify-content: space-between;
+}
+
+
 #footer {
 	height: 6vh;
 	display: flex;
@@ -150,3 +219,22 @@ html {
 	color: var(--sage);
 	border-top: 0.25rem solid var(--brunswick-green);
 }
+
+
+.display_text {
+	align-items: center;
+	text-align: center;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+	padding: 2rem;
+}
+
+.content_card:nth-last-of-type(even) {
+	flex-direction: row-reverse;
+}
+
+/*for the future, I need to use this to make the mobile website better*/
+@media screen and (max-width: 768px){
+
+  }
