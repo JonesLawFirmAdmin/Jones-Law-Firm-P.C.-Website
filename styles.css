@@ -94,7 +94,7 @@ html {
 #header_text_wrapper {
 	padding-right: 2rem;
 	color: var(--xanadu);
-	font-family: 'Cinzel Decorative', serif;
+	font-family: 'Simonetta', serif;
 	font-size: 3rem; /*40px*/
 
 	display: flex;
@@ -252,13 +252,13 @@ html {
 }
 
 .top_text {
-	font-family: 'Cinzel Decorative', serif;
+	font-family: 'Simonetta', serif;
 	font-size: 4rem;
 	color: var(--brunswick-green);
 }
 
 .additional_text {
-	font-family: 'Cinzel Decorative', serif;
+	font-family: 'Simonetta', serif;
 	font-size: 2rem;
 }
 
@@ -300,7 +300,7 @@ padding-bottom: 2rem;
 
 
 .about_section h1 {
-	font-family: 'Cinzel Decorative', serif;
+	font-family: 'Simonetta', serif;
 	color: var(--brunswick-green);
 	font-size: 3rem;
 	margin-bottom: 1rem;
@@ -348,7 +348,7 @@ padding-bottom: 2rem;
 }
 
 .about_section h1 {
-	    font-family: 'Cinzel Decorative', serif;
+	    font-family: 'Simonetta', serif;
 }
 
 /*styles for the contact page*/
