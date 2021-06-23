@@ -48,6 +48,8 @@ table {
 	border-spacing: 0;
 }
 
+
+
 /*end resets section*/
 
 
@@ -203,7 +205,22 @@ html {
 	flex: 1;
 }
 
+.image_holder {
+	display: flex;
 
+	float: none;
+	padding: none;
+	align-items: flex-end;
+	margin: none;
+	position: relative;
+}
+
+#pic_bryce_3_4s {
+	width: 100%;
+	height: auto;
+	float: none;
+	margin: none;
+}
 
 #pic_street_view {
 	border-radius: 0.25rem;
@@ -339,17 +356,3 @@ padding-bottom: 2rem;
 }
 
 /*for the future, I need to use this to make the mobile website better*/
-@media screen and (max-width: 1000px){
-	.content_card img {
-		border-radius: 0.25rem;
-		border: 0.25rem solid white;
-		margin: 1rem;
-		position: relative;
-		height: 95%;
-		width: auto;
-	}
-
-	#motto {
-		display: none;
-	}
-  }
