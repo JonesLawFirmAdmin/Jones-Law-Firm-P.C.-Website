@@ -131,6 +131,7 @@ html {
 /*all this does is make the colored boxes the right size*/
 .background_color {
 	width: 100%;
+	overflow: hidden;
 	height: 100vh;
 	justify-content: center;
 	align-items: center;
@@ -211,11 +212,8 @@ html {
 
 .image_holder {
 	display: flex;
-
 	float: none;
-	padding: none;
 	align-items: flex-end;
-	margin: none;
 	position: relative;
 }
 
@@ -223,7 +221,6 @@ html {
 	width: 100%;
 	height: auto;
 	float: none;
-	margin: none;
 }
 
 #pic_street_view {
@@ -300,9 +297,7 @@ padding-bottom: 2rem;
 .lawyer_spotlight {
 	display: block;
 }
-.lawyer_spotlight:first-child {
-	align-items: center;
-}
+
 
 .about_section h1 {
 	color: var(--brunswick-green);
@@ -337,8 +332,9 @@ padding-bottom: 2rem;
 	border: 0.25rem solid white;
 	margin: 1rem;
 	position: relative;
-	height: 100%;
-	width: auto;
+	width: 100%;
+	height: auto;
+	float: none;
 
 }
 
@@ -359,4 +355,67 @@ padding-bottom: 2rem;
 	margin: 1rem;
 }
 
+.media_button {
+	display: none;
+}
+
 /*for the future, I need to use this to make the mobile website better*/
+
+@media screen and (max-width: 479px) {
+    #navigation_bar {
+		}
+
+		.media_button {
+			display: block;
+			text-decoration: none;
+			color: var(--sage);
+		}
+
+		.nav_bar_button {
+			display: none;
+		}
+
+		#motto {
+			display: none;
+		}
+
+		#firm_name {
+			font-size: 2rem;
+		}
+
+		.display_text {
+			font-size: 2rem;
+		}
+
+		.top_text {
+			font-size: 3rem;
+		}
+
+		.additional_text {
+			font-size: 1.5rem;
+		}
+
+		#lawyer_name_and_pic {
+			display: flex;
+			flex-direction: column;
+		}
+
+		#pic_bryce_front {
+			display: none;
+		}
+
+		iframe {
+			width: 95vw;
+		}
+
+		#pic_justice {
+			display: none;
+		}
+
+		#footer {
+			height: 5rem;
+		}
+
+		.button_more {
+			right: 14vw;
+		}
