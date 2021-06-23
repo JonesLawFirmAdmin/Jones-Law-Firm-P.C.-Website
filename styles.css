@@ -94,8 +94,8 @@ html {
 #header_text_wrapper {
 	padding-right: 2rem;
 	color: var(--xanadu);
-	font-family: 'Viaoda Libre', serif;
-	font-size: 4rem; /*40px*/
+	font-family: 'Cinzel Decorative', serif;
+	font-size: 3rem; /*40px*/
 
 	display: flex;
 	flex-direction: column;
@@ -252,13 +252,13 @@ html {
 }
 
 .top_text {
-	font-family: 'Viaoda Libre', serif;
+	font-family: 'Cinzel Decorative', serif;
 	font-size: 4rem;
 	color: var(--brunswick-green);
 }
 
 .additional_text {
-	font-family: 'Viaoda Libre', serif;
+	font-family: 'Cinzel Decorative', serif;
 	font-size: 2rem;
 }
 
@@ -300,7 +300,7 @@ padding-bottom: 2rem;
 
 
 .about_section h1 {
-	font-family: 'Viaoda Libre', serif;
+	font-family: 'Cinzel Decorative', serif;
 	color: var(--brunswick-green);
 	font-size: 3rem;
 	margin-bottom: 1rem;
@@ -348,7 +348,7 @@ padding-bottom: 2rem;
 }
 
 .about_section h1 {
-	font-family: 'Viaoda Libre', serif;
+	    font-family: 'Cinzel Decorative', serif;
 }
 
 /*styles for the contact page*/
