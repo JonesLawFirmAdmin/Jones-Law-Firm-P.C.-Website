@@ -300,6 +300,7 @@ padding-bottom: 2rem;
 
 
 .about_section h1 {
+	font-family: 'Viaoda Libre', serif;
 	color: var(--brunswick-green);
 	font-size: 3rem;
 	margin-bottom: 1rem;
@@ -344,6 +345,10 @@ padding-bottom: 2rem;
 		text-decoration: none;
 		color: var(--sage);
 		border-radius: 0.25rem;
+}
+
+.about_section h1 {
+	font-family: 'Viaoda Libre', serif;
 }
 
 /*styles for the contact page*/
