@@ -1,63 +1,82 @@
 <!DOCTYPE html>
+<!--Code By Webdevtrick ( https://webdevtrick.com )-->
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Previous Clients of Jones Law Firm, P.C.</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Simonetta&display=swap" rel="stylesheet">
-  </head>
-  <header id="header_bar">
-    <img src="Images/logo.png" id="logo" alt="Jones Law Firm Logo">
-    <div id="header_text_wrapper">
-      <div id="firm_name">Jones Law Firm, P.C.</div>
-      <div id="motto">Competence & Client Service</div>
-    </div>
-  </header>
-  <nav id="navigation_bar">
-    <a class="nav_bar_button" href="index.html#header_bar">HOME</a>
-    <a class="nav_bar_button" href="about.html">ABOUT</a>
-    <a class="nav_bar_button" href="#header_bar">CASES</a>
-    <a class="nav_bar_button" href="contact.html">CONTACT</a>
-    <a class="media_button" href="index.html">GO BACK</a>
-  </nav>
+<head>
+  <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jones Law Firm, P.C. Client Testimonials</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css'>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <body>
-    <div class="about_section">
+<header>
+  <div class="header-top clearfix container-fluid">
+    <a href="#firstSection">
+    <img class="img-fluid" id="img_logo" src="Images/logo.png" alt-"Jones Law Firm Logo"></img></a>
+        <span id="firm_name">Jones Law Firm, P.C.</span>
+    <a class="l-right toggle-menu" href="#">
+      <i></i>
+      <i></i>
+      <i></i>
+    </a>
+  </div>
+
+  <nav class="hide">
+    <ul id="menu">
+      <li data-menuanchor="firstSection">
+        <a href="index.html#firstSection" title="Home">Home</a>
+      </li>
+      <li data-menuanchor="secondSection">
+        <a href="about.html" title="About">About</a>
+      </li>
+      <li data-menuanchor="thirdSection">
+        <a href="#firstSection" title="Cases">Cases</a>
+      </li>
+      <li data-menuanchor="fourthSection">
+        <a href="contact.html" title="Contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<div id="fullpage">
+    <section class="vertical-scrolling about-section">
     <h1>Our Philosophy</h1>
     <p>For our clients, Jones Law Firm has obtained trial and appellate results at both the state and federal levels in commercial and other high-value disputes. We are committed to providing  excellent legal representation, timely updates, and competent handling for our clients' cases. Jones Law Firm attorneys have quality educational backgrounds and years of litigation experience. Our competent paralegals and assistants will work with you to keep your costs affordable and your case's progress clear.  From general commercial litigation to disputes over non-payment, and underpayment of wages or overtime, Jones Law Firm can help you navigate your legal journey. Our clients are small and medium-sized businesses, business owners, and individuals.  Ready to get started?  <a href="contact.html">CLICK HERE</a> to vist our Contact Page.  Or, scroll down to see what our past clients are saying about us!  All past client testimonials are quoted directly from independent online reviews.<p>
-    </div>
+    </section>
 
-    <div class="about_section">
+    <section class="vertical-scrolling about-section">
       <h1>"Trustworthy and Honest"</h1>
       <p>"Jones Law firm represented me in a contract dispute.. They have been wonderful and very helpful. Always available to speak about case and they really took the time to explain everything to me. [My attorneys] understood the case and were very clear in what different potential outcomes could be and which would be the best for me. They have really have gone out of their way to help me.. I would hire them again in a second. Very smart, trustworthy and honest."</p>
-    </div>
+    </section>
 
-    <div class="about_section">
-    <h1>"Huge Weight Off Our Shoulders"</h1>
+    <section class="vertical-scrolling about-section">
+    <h1>"Weight Off Our Shoulders"</h1>
     <p>"[My attorneys at Jones Law Firm] did an amazing job for me and my family.</p>
     <p>"[My lead attorney] was able to get us dismissed as defendants from a lawsuit. Forever grateful that i came across them. Huge weight off our shoulders.</p>
     <p>"Very professional and great to work with. Will definitely recommend and keep on file for any future legal matters.""</p>
-    </div>
+    </section>
 
-    <div class="about_section">
+    <section class="vertical-scrolling about-section">
     <h1>"Doing Things the Right Way"</h1>
     <p>"Jones Law Firm has represented me on several matters including a contract dispute, real estate and business formation. They have always been very professional and helpful. I’ve never had a problem getting into contact with them. They are definitely a firm doing things the right way, I trust them to handle things properly."</p>
-    </div>
+    </section>
 
-    <div class="about_section">
+    <section class="vertical-scrolling about-section">
     <h1>Quick and Efficient</h1>
     <p>"[My attorney at Jones Law Firm] is professional and knowledgeable about NYC business law. He’s aggressive and works quickly and efficiently!!"</p>
-    </div>
-  </body>
-  <a class="button_floating_scroll_top" href="#header_bar">^</a>
+    </section>
+
+  </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js'></script>
+  <script  src="function_cases.js"></script>
 
   <footer id="footer">
-    <div>All items copyright Jones Law Firm, P.C. 2021.</div>
-    <div>Attorney Advertising:  Past results do not guarantee future outcomes.</div>
+    <div>All items copyright Jones Law Firm, P.C. 2021.</div>  <div>Attorney Advertising:  Past results do not guarantee future outcomes.</div>
   </footer>
 
-
-</html>
+  </body>
+  </html>

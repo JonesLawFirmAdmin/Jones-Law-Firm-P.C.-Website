@@ -1,78 +1,94 @@
 <!DOCTYPE html>
+<!--Code By Webdevtrick ( https://webdevtrick.com )-->
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About Jones Law Firm, P.C.</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Simonetta&display=swap" rel="stylesheet"> 
-  <header id="header_bar">
-    <img src="Images/logo.png" id="logo" alt="Jones Law Firm Logo">
-    <div id="header_text_wrapper">
-      <div id="firm_name">Jones Law Firm, P.C.</div>
-      <div id="motto">Competence & Client Service</div>
-    </div>
-  </header>
-  <nav id="navigation_bar">
-    <a class="nav_bar_button" href="index.html#header_bar">HOME</a>
-    <a class="nav_bar_button" href="#header_bar">ABOUT</a>
-    <a class="nav_bar_button" href="cases.html">CASES</a>
-    <a class="nav_bar_button" href="contact.html">CONTACT</a>
-    <a class="media_button" href="index.html">GO BACK</a>
+<head>
+  <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>History Spotlight--Jones Law Firm, P.C.</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css'>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-top clearfix container-fluid">
+    <a href="#firstSection">
+    <img class="img-fluid" id="img_logo" src="Images/logo.png" alt-"Jones Law Firm Logo"></img></a>
+        <span id="firm_name">Jones Law Firm, P.C.</span>
+    <a class="l-right toggle-menu" href="#">
+      <i></i>
+      <i></i>
+      <i></i>
+    </a>
+  </div>
+
+  <nav class="hide">
+    <ul id="menu">
+      <li data-menuanchor="firstSection">
+        <a href="index.html#firstSection" title="Home">Home</a>
+      </li>
+      <li data-menuanchor="secondSection">
+        <a href="about.html" title="About">About</a>
+      </li>
+      <li data-menuanchor="thirdSection">
+        <a href="cases.html" title="Cases">Cases</a>
+      </li>
+      <li data-menuanchor="fourthSection">
+        <a href="contact.html" title="Contact">Contact</a>
+      </li>
+    </ul>
   </nav>
-
-  <body>
-    <div class="lawyer_spotlight">
-      <div class="lawyer_name_and_pic">
-        <div class="image_holder">
-        <img id="pic_bryce_front" src="Images/tanner_bryce_jones_front_view.png" alt="T. Bryce Jones, Esq." title="T. Bryce Jones, Esq."/>
-      </div>
-        <div class="display_text">
-          <div class="top_text">Lawyer Spotlight:</div>
-          <div class="additional_text">T. Bryce Jones, Esq.</div>
-        </div> <!--end text area-->
+</header>
+  <div id="fullpage">
+    <section class="vertical-scrolling about-section">
+      <img id="pic_bryce_front" src="Images/tanner_bryce_jones_front_view.png" alt="T. Bryce Jones, Esq." title="T. Bryce Jones, Esq."/>
+      <div>
+        <div id="lawyer-plaque">
+          <p>Lawyer Spotlight:</p>
+          <p>T. Bryce Jones, Esq.</p>
         </div>
-    <div class="about_section">
-    <h1>Our Founder</h1>
-    <p>Tanner “Bryce” Jones, Esq., Managing Director of the firm, develops the litigation strategies on all cases and ensures that they match client goals, By listening to and understanding the client's perspective, he is able to give balanced advice on the risk-weighted costs and benefits of undertaking legal work at all stages of the litigation lifecycle. His legal interests include the enforceability of money judgments and the powers and limitations of contracts to create and maintain incentives among businesses and their stakeholders.</p>
-    </div>
+        </div> <!--end text area-->
+      </section>
+    <section class="vertical-scrolling about-section">
+      <h1>Our Founder</h1>
+      <p>Tanner “Bryce” Jones, Esq., Managing Director of the firm, develops the litigation strategies on all cases and ensures that they match client goals, By listening to and understanding the client's perspective, he is able to give balanced advice on the risk-weighted costs and benefits of undertaking legal work at all stages of the litigation lifecycle. His legal interests include the enforceability of money judgments and the powers and limitations of contracts to create and maintain incentives among businesses and their stakeholders.</p>
+    </section>
 
-    <div class="about_section">
-    <h1>Before Jones Law Firm</h1>
-    <p>Before forming his own fim, Beyce was an eDiscovery project manager who deployed cutting edge technology to analyze email and other data in internal investizations of some of the nation’s largest financal institutions. While obtaining his Juris Doctor and Certificate in Intemational Law at Columbia University School of Law, Bryce helped found the Columbia Private Equity Society and was a member of an award-winning Vis Moot Court team.</p>
-    <p>Bryce is originally from Norman, Oklahoma and currently lives in Manhattan. As a member of the Lawyers’ Assistance Program Committee of the New York City Bar Association, he participates in the rehabilitation of attorneys struggling with mental hetlth or drug and alcohol issues. Bryce dedicates much of his non-professional time to Riseho Kosei-kai, a Buddhist organization emphasizing the teachings of the Lotus Sutra.</p>
-    </div>
+    <section class="vertical-scrolling about-section">
+      <h1>Before Jones Law Firm</h1>
+      <p>Before forming his own fim, Beyce was an eDiscovery project manager who deployed cutting edge technology to analyze email and other data in internal investizations of some of the nation’s largest financal institutions. While obtaining his Juris Doctor and Certificate in Intemational Law at Columbia University School of Law, Bryce helped found the Columbia Private Equity Society and was a member of an award-winning Vis Moot Court team.</p>
+      <p>Bryce is originally from Norman, Oklahoma and currently lives in Manhattan. As a member of the Lawyers’ Assistance Program Committee of the New York City Bar Association, he participates in the rehabilitation of attorneys struggling with mental hetlth or drug and alcohol issues. Bryce dedicates much of his non-professional time to Riseho Kosei-kai, a Buddhist organization emphasizing the teachings of the Lotus Sutra.</p>
+    </section>
 
-    <div class="about_section">
-    <h1>Practice Areas:</h1>
-    <p>Commercial Litigation</p>
-    <p>Judgement Enforcement</p>
-    <p>Employment Law</p>
-    </div>
+    <section class="vertical-scrolling about-section">
+      <h1>Practice Areas:</h1>
+      <p>Commercial Litigation</p>
+      <p>Judgement Enforcement</p>
+      <p>Employment Law</p>
+    </section>
 
-    <div class="about_section">
-    <h1>State Bar Admissions:</h1>
-    <p>New York</p>
-    <p>Okahoma</p>
-    </div>
+    <section class="vertical-scrolling about-section">
+      <h1>State Bar Admissions:</h1>
+      <p>New York</p>
+      <p>Okahoma</p>
+    </section>
 
-    <div class="about_section">
-    <h1>Federal Court Admission:</h1>
-    <p>U.S. District Court, Southem District of New York<p>
-    <p>U.S. District Court, Eastern District of New York</p>
-    <p>U.S. Coury of Appeals for the Second Circuit</p>
-    </div>
+    <section class="vertical-scrolling about-section">
+      <h1>Federal Courts:</h1>
+        <p>U.S. District Court, Southem District of New York<p>
+        <p>U.S. District Court, Eastern District of New York</p>
+        <p>U.S. Coury of Appeals for the Second Circuit</p>
+    </section>
 
     </div> <!--end spotlight section-->
-  </body>
 
-  <a class="button_floating_scroll_top" href="#header_bar">^</a>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js'></script>
+  <script  src="function_about.js"></script>
 
   <footer id="footer">
     <div>All items copyright Jones Law Firm, P.C. 2021.</div>  <div>Attorney Advertising:  Past results do not guarantee future outcomes.</div>
   </footer>
-
-
+  </body>
 </html>

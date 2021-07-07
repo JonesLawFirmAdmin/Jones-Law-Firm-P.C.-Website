@@ -1,0 +1,540 @@
+/** Code By Webdevtrick ( https://webdevtrick.com ) **/
+@import url('https://fonts.googleapis.com/css2?family=Simonetta&display=swap');
+
+:root {
+--smoky-black: hsla(20, 39%, 5%, 1);
+--transparent-black: hsla(20, 39%, 5%, 0.3);
+--more-transparent-black: hsla(20,39%, 5%, 0.25);
+--brunswick-green: hsla(162, 42%, 22%, 1);
+--xanadu: hsla(104, 10%, 43%, 1);
+--metallic-sunburst: hsla(49, 40%, 43%, 1);
+--sage: hsla(48, 29%, 70%, 1);
+--standard-font: 'Simonetta', serif;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: var(--standard-font);
+	box-sizing: border-box;
+}
+
+#firm_name {
+	margin-left: 3rem;
+	color: var(--brunswick-green);
+	font-size: 5rem;
+	font-weight: bold;
+	background: var(--sage);
+	border-radius: 0.5rem;
+	padding: 1rem;
+	border: 0.5rem solid var(--smoky-black);
+}
+
+html {
+	font-size: 62.5%;
+}
+body {
+	color: var(--smoky-black);
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+ul, li {
+	list-style-type: none;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.l-left {
+	float: left;
+}
+.l-right {
+	float: right;
+}
+.end {
+	margin-top: 30px;
+	font-size: 3em;
+	font-weight: bold;
+	opacity: 0;
+	-webkit-transform: translateY(300px);
+	        transform: translateY(300px);
+	transition: opacity, -webkit-transform 1s;
+	transition: opacity, transform 1s;
+	transition: opacity, transform 1s, -webkit-transform 1s;
+	transition-delay: 1s;
+}
+.header-top {
+	background: var(--transparent-black);
+	padding: 0 10px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 12;
+	box-sizing: border-box;
+	border-bottom: 2px solid var(--brunswick-green);
+}
+
+#img_logo {
+	height: 22vh;
+	width: auto;
+}
+
+
+h1 {
+	line-height: 70px;
+	height: 70px;
+}
+h1 a {
+	display: block;
+	padding: 0 10px;
+}
+.toggle-menu {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	top: 10px;
+}
+.toggle-menu i {
+	position: absolute;
+	display: block;
+	height: 2px;
+	background: var(--brunswick-green);
+	width: 30px;
+	left: 10px;
+	transition: all .3s;
+}
+.toggle-menu i:nth-child(1) {
+	top: 16px;
+}
+.toggle-menu i:nth-child(2) {
+	top: 24px;
+}
+.toggle-menu i:nth-child(3) {
+	top: 32px;
+}
+.open-menu i:nth-child(1) {
+	top: 25px;
+	-webkit-transform: rotateZ(45deg);
+	        transform: rotateZ(45deg);
+}
+.open-menu i:nth-child(2) {
+	background: transparent;
+}
+.open-menu i:nth-child(3) {
+	top: 25px;
+	-webkit-transform: rotateZ(-45deg);
+	        transform: rotateZ(-45deg);
+}
+nav {
+ 	height: 0;
+	opacity: 0;
+  box-sizing: border-box;
+	background: var(--more-transparent-black);
+	position: fixed;
+	top: 22vh;
+	width: 100%;
+  transition: all 1s;
+}
+.open-menu ~ nav {
+	opacity: 1;
+ 	padding: 80px 0;
+	z-index: 15;
+	height: calc(90vh - 70px);
+}
+nav ul {
+	padding: 0 10px;
+	display: flex;
+}
+nav li {
+	flex: 1;
+	text-align: center;
+	align-items: center;
+}
+nav li a {
+	font-size: 2em;
+	display: block;
+	padding: 30px;
+	text-align: center;
+	transition: background .3s;
+}
+nav li a {
+	background: var(--metallic-sunburst);
+	margin-left: 20px;
+	border-radius: 0.5rem;
+	border: 2px solid var(--smoky-black);
+}
+nav li a:hover {
+	background: var(--smoky-black);
+	color: white;
+	text-decoration: none;
+	border: 3px solid var(--brunswick-green);
+}
+section {
+	text-align: center;
+}
+h2 {
+	font-size: 4em;
+	margin-bottom: 20px;
+}
+h3 {
+	font-weight: 300;
+	font-size: 2.8em;
+}
+
+
+#bryce_3_4 {
+	max-height: 75vh;
+	height: 100%;
+	width: auto;
+	position: absolute;
+	bottom: 0rem;
+	left: 0rem;
+}
+
+#motto_1{
+	position: absolute;
+	right: 60px;
+	padding: 3rem;
+	background: var(--smoky-black);
+	color: var(--sage);
+	text-align: center;
+	box-sizing: border-box;
+	border-radius: .5rem;
+	border: 0.5rem solid var(--sage);
+	font-size: 4rem;
+}
+
+
+
+#history_text{
+	padding: 3rem;
+	background: var(--smoky-black);
+	color: var(--sage);
+	text-align: center;
+	box-sizing: border-box;
+	border-radius: .5rem;
+	border: 0.5rem solid var(--sage);
+	font-size: 4rem;
+	position: absolute;
+	left: 1rem;
+	top: 26rem;
+}
+
+#pic_street_view {
+	width: 50vw;
+	height: auto;
+	max-height: 60vh;
+	border-radius: 0.5rem;
+	border: 0.5rem solid var(--smoky-black);
+	top: 26rem;
+	position: absolute;
+	right: 5rem;
+}
+
+#footer {
+	height: 6vh;
+	display: flex;
+	width: 100%;
+	position: fixed;
+	bottom:0;
+	text-align: right;
+	flex-flow: column;
+	justify-content: space-around;
+	background-color: var(--smoky-black);
+	color: var(--sage);
+	border-top: 0.5rem solid var(--brunswick-green);
+}
+
+.about-section {
+	padding: 1rem;
+	text-align: justify;
+	padding-right: 5rem;
+}
+
+.about-section h1 {
+	font-size: 3rem;
+}
+
+.about-section p {
+	font-size: 2rem;
+}
+
+#pic_bryce_front {
+	max-height: 70vh;
+	height: 100%;
+	width: auto;
+	position: absolute;
+	bottom: 8rem;
+	left: 0rem;
+
+}
+
+#lawyer-plaque {
+	position: absolute;
+	top: 30rem;
+	right: 8rem;
+	background: var(--sage);
+	border: 0.5rem solid var(--smoky-black);
+	border-radius: 0.5rem;
+	padding: 1rem;
+}
+
+#cases-text {
+	padding: 3rem;
+	background: var(--smoky-black);
+	color: var(--sage);
+	text-align: center;
+	box-sizing: border-box;
+	border-radius: .5rem;
+	border: 0.5rem solid var(--metallic-sunburst);
+	font-size: 4rem;
+	position: absolute;
+	left: 1rem;
+	top: 26rem;
+}
+
+#contact-text {
+	padding: 3rem;
+	background: var(--smoky-black);
+	color: var(--sage);
+	text-align: center;
+	box-sizing: border-box;
+	border-radius: .5rem;
+	border: 0.5rem solid var(--sage);
+	font-size: 4rem;
+	position: absolute;
+	left: 1rem;
+	top: 26rem;
+}
+
+#lawyer-plaque p {
+	font-size: 3rem;
+}
+
+#pic_lady_justice {
+	width: auto;
+	height: 60vh;
+	border-radius: 0.5rem;
+	border: 0.5rem solid var(--smoky-black);
+	top: 26rem;
+	position: absolute;
+	right: 5rem;
+}
+
+#pic_court {
+	width: auto;
+	max-width: 90%;
+	height: 53vh;
+	border-radius: 0.5rem;
+	border: 0.5rem solid var(--smoky-black);
+	top: 26rem;
+	position: absolute;
+	right: 5rem;
+}
+
+iframe {
+	position: absolute;
+	top: 22vh;
+	right: 8vw;
+	bottom: 6vh;
+	width: 85%;
+}
+
+/*tablet corrections:*/
+@media screen and (max-width: 800px) {
+
+	#motto_1 {
+		position: absolute;
+		top: 70px;
+		align-items: center;
+		right: 3rem;
+		left: 3rem;
+		font-size: 3rem;
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+		font-weight: bold;
+	}
+
+	#lawyer-plaque {
+		position: absolute;
+		top: 70px;
+		width: 100%;
+		right: 0;
+		left: 0;
+		background: var(--sage);
+		border: 0.5rem solid var(--smoky-black);
+		border-radius: 0.5rem;
+		text-align: center;
+	}
+
+	#cases-text {
+		position: absolute;
+		top: 70px;
+		width: 100%;
+		right: 0;
+		left: 0;
+		text-align: center;
+	}
+
+	#contact-text {
+		position: absolute;
+		top: 70px;
+		width: 100%;
+		right: 0;
+		left: 0;
+		text-align: center;
+	}
+
+	#pic_lady_justice {
+		width: auto;
+		height: 60vh;
+		border-radius: 0.5rem;
+		border: 0.5rem solid var(--smoky-black);
+		bottom: 6vh;
+		top: auto;
+		position: absolute;
+		right: 5rem;
+	}
+
+	iframe {
+		margin-top: none;
+		top: 70px;
+		position: absolute;
+		right: 8vw;
+		max-width: 95%;
+	}
+
+
+	nav ul {
+		flex-direction: column;
+	}
+
+	nav {
+		top: 70px;
+	}
+
+	nav li {
+		margin-top: 1px;
+	}
+
+
+  nav li a {
+    font-size: 1.5em;
+  }
+
+	nav li a:hover {
+		background: var(--smoky-black);
+	}
+
+  .scroll-icon {
+    display: none;
+  }
+
+	.header_top {
+		height: 70px;
+	}
+
+	#img_logo {
+		height: 70px;
+	}
+
+	#firm_name {
+		color: var(--brunswick-green);
+		font-size: 2rem;
+		margin-left: 1rem;
+
+
+	}
+
+	#pic_street_view {
+		transform: rotate(90deg);
+		overflow: hidden;
+	}
+
+}
+
+/*cell corrections:*/
+@media screen and (max-width: 415px) {
+	#motto_1 {
+		font-size: 2rem;
+	}
+
+	#pic_court {
+		max-width: 85%;
+		height: auto;
+		border-radius: 0.5rem;
+		border: 0.5rem solid var(--smoky-black);
+		top: 26rem;
+		position: absolute;
+		right: 5rem;
+	}
+
+	iframe {
+		top: 70px;
+		position: absolute;
+		right: 8vw;
+		max-width: 95%;
+	}
+
+	#pic_lady_justice {
+		height: 50vh;
+	}
+
+
+	#history_text {
+			top: 70px;
+			position: absolute;
+			width: 100%;
+			left: 0;
+	}
+
+	#pic_street_view {
+		top: 300px;
+		position: absolute;
+		width: 80%;
+		right: 8rem;
+	}
+
+  html {
+    font-size: 50%;
+  }
+
+  .open-menu ~ nav {
+		padding: 20px 0;
+	}
+
+	nav {
+		top: 70px;
+	}
+
+	nav li a {
+		padding: 3px;
+	}
+
+	a:hover {
+		background: var(--smoky-black);
+	}
+
+	.header_top {
+		height: 70px;
+	}
+
+	#img_logo {
+		height: 70px;
+	}
+
+	#firm_name {
+		color: var(--brunswick-green);
+		font-size: 2rem;
+
+	}
+
+}

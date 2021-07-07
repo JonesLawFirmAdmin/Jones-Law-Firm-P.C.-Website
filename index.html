@@ -1,91 +1,78 @@
 <!DOCTYPE html>
+<!--Code By Webdevtrick ( https://webdevtrick.com )-->
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jones Law Firm, P.C.</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Simonetta&display=swap" rel="stylesheet"> 
-  </head>
-  <header id="header_bar">
-    <img src="Images/logo.png" id="logo" alt="Jones Law Firm Logo">
-    <div id="header_text_wrapper">
-      <div id="firm_name">Jones Law Firm, P.C.</div>
-      <div id="motto">Competence & Client Service</div>
-    </div>
-  </header>
-  <nav id="navigation_bar">
-    <a class="nav_bar_button" href="#header_bar">HOME</a>
-    <a class="nav_bar_button" href="#about_area">ABOUT</a>
-    <a class="nav_bar_button" href="#cases_area">CASES</a>
-    <a class="nav_bar_button" href="#contact_area">CONTACT</a>
+<head>
+  <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jones Law Firm, P.C.</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css'>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-top clearfix container-fluid">
+    <a href="#firstSection">
+    <img class="img-fluid" id="img_logo" src="Images/logo.png" alt-"Jones Law Firm Logo"></img></a>
+        <span id="firm_name">Jones Law Firm, P.C.</span>
+    <a class="l-right toggle-menu" href="#">
+      <i></i>
+      <i></i>
+      <i></i>
+    </a>
+  </div>
+
+  <nav class="hide">
+    <ul id="menu">
+      <li data-menuanchor="firstSection">
+        <a href="#firstSection" title="Home">Home</a>
+      </li>
+      <li data-menuanchor="secondSection">
+        <a href="about.html" title="About">About</a>
+      </li>
+      <li data-menuanchor="thirdSection">
+        <a href="cases.html" title="Cases">Cases</a>
+      </li>
+      <li data-menuanchor="fourthSection">
+        <a href="contact.html" title="Contact">Contact</a>
+      </li>
+    </ul>
   </nav>
+</header>
 
-  <body>
-    <!--just stick all the content in a class="background-color" div to make the colors alternate and scale properly (see CSS)-->
-    <div id="intro_area" class="background_color">
-      <!--just an intro-->
-      <div class="content_card" id="intro_content">
-        <div class="image_holder">
-          <img id="pic_bryce_3_4s"src="Images/tanner_bryce_jones_three_quarters.png" alt="A picture of our founder, Tanner Bryce Jones" title="Tanner Bryce Jones, Esq."/>
-        </div>
-        <div id="intro_text_area" class="display_text">
-          <div class="top_text">Jones Law Firm, P.C.</div>
-          <div class="additional_text">Quality Representation.  Affordable Pricing.</div>
-        </div> <!--end text area-->
-      <a class="button_scroll_up" href="#header_bar">^</a>
-        </div> <!--end content card-->
+<div id="fullpage">
+  <section class="vertical-scrolling">
+    <img id="bryce_3_4" src="Images/tanner_bryce_jones_three_quarters.png" alt="T. Bryce Jones, Esq." title="T. Bryce Jones, Esq.">
+    <div id="motto_1"><p>Competence</p>
+      <p>&</p>
+      <p>Client Service</p></div>
+  </section>
+  <section id="history" class="vertical-scrolling">
+    <a href="about.html"><div id="history_text"><p>About</p>
+      <p>Our</p>
+      <p>Firm</p>
+    </div></a>
+    <img id="pic_street_view" src="Images/street_view.png" alt="NY Streets near our office." title="Street view near our office."/>
+  </section>
+  <section class="vertical-scrolling">
+    <a href="cases.html"><div id="cases-text"><p>What Our</p>
+      <p>Clients Have</p>
+      <p>to Say</p></div></a>
+        <img id="pic_lady_justice" src="Images/justice_royalty_free.png" alt="Lady Justice with her Scales." title="Lady Justice with her Scales."/>
+  </section>
+  <section class="vertical-scrolling">
+    <a href="contact.html"><div id="contact-text"><p>Contact Us</p></div></a>
+        <img id="pic_court" src="Images/nycounty_supreme_court.png" alt="NY County Supreme Court Building" title="NY County Supreme Court Building"/>
+</div>
 
-    </div> <!--end of background color-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js'></script>
+<script  src="function.js"></script>
 
-    <div id="about_area" class="background_color">
-      <!--just an intro-->
-      <div class="content_card" id="about_content">
-        <div id="about_text_area" class="display_text">
-          <div class="top_text">Our History</div>
-          <div class="additional_text">Big Firm Quality. Small Firm Prices.</div>
-        </div> <!--end text area-->
-          <img id="pic_street_view" src="Images/street_view.png" alt="A picture of our founder, Tanner Bryce Jones" />
-          <a class="button_more" href="about.html">See More</a>
-          <a class="button_scroll_up" href="#header_bar">^</a>
-        </div> <!--end content card-->
+<footer id="footer">
+  <div>All items copyright Jones Law Firm, P.C. 2021.</div>  <div>Attorney Advertising:  Past results do not guarantee future outcomes.</div>
+</footer>
 
-    </div> <!--end of background color-->
-
-    <div id="cases_area" class="background_color">
-      <!--just an intro-->
-      <div class="content_card" id="cases_content">
-        <img id="pic_justice" src="Images/justice_royalty_free.png" alt="Lady Jusitce With Her Scales" />
-        <div id="cases_text_area" class="display_text">
-          <div class="top_text">Our Cases</div>
-          <div class="additional_text">What Our Clients Have to Say.</div>
-        </div> <!--end text area-->
-        <a class="button_more" href="cases.html">See More</a>
-      <a class="button_scroll_up" href="#header_bar">^</a>
-        </div> <!--end content card-->
-
-    </div> <!--end of background color-->
-
-    <div id="contact_area" class="background_color">
-      <!--just an intro-->
-      <div class="content_card" id="about_content">
-        <div id="contact_text_area" class="display_text">
-          <div class="top_text">Contact Us</div>
-          <div class="additional_text">Your Legal Solution Begins Today.</div>
-        </div> <!--end text area-->
-        <img id="pic_nysupreme" src="Images/nycounty_supreme_court.png" alt="NY County Supreme Court Building" />
-        <a class="button_more" href="contact.html">See More</a>
-      <a class="button_scroll_up" href="#header_bar">^</a>
-        </div> <!--end content card-->
-
-    </div> <!--end of background color-->
-  </body>
-
-  <footer id="footer">
-    <div>All items copyright Jones Law Firm, P.C. 2021.</div>  <div>Attorney Advertising:  Past results do not guarantee future outcomes.</div>
-  </footer>
-
-
+</body>
 </html>

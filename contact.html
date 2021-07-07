@@ -1,40 +1,61 @@
 <!DOCTYPE html>
+<!--Code By Webdevtrick ( https://webdevtrick.com )-->
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact Jones Law Firm, P.C.</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Simonetta&display=swap" rel="stylesheet"> 
-  </head>
-  <header id="header_bar">
-    <img src="Images/logo.png" id="logo" alt="Jones Law Firm Logo">
-    <div id="header_text_wrapper">
-      <div id="firm_name">Jones Law Firm, P.C.</div>
-      <div id="motto">Competence & Client Service</div>
-    </div>
-  </header>
-  <nav id="navigation_bar">
-    <a class="nav_bar_button" href="index.html#header_bar">HOME</a>
-    <a class="nav_bar_button" href="about.html">ABOUT</a>
-    <a class="nav_bar_button" href="cases.html">CASES</a>
-    <a class="nav_bar_button" href="#header_bar">CONTACT</a>
-    <a class="media_button" href="index.html">GO BACK</a>
+<head>
+  <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Jones Law Firm, P.C.</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css'>
+<link rel="stylesheet" href="style.css">
+
+<style>
+  html {
+    background: var(--metallic-sunburst);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-top clearfix container-fluid">
+    <a href="#firstSection">
+    <img class="img-fluid" id="img_logo" src="Images/logo.png" alt-"Jones Law Firm Logo"></img></a>
+        <span id="firm_name">Jones Law Firm, P.C.</span>
+    <a class="l-right toggle-menu" href="#">
+      <i></i>
+      <i></i>
+      <i></i>
+    </a>
+  </div>
+
+  <nav class="hide">
+    <ul id="menu">
+      <li data-menuanchor="firstSection">
+        <a href="index.html#firstSection" title="Home">Home</a>
+      </li>
+      <li data-menuanchor="secondSection">
+        <a href="about.html" title="About">About</a>
+      </li>
+      <li data-menuanchor="thirdSection">
+        <a href="cases.html" title="Cases">Cases</a>
+      </li>
+      <li data-menuanchor="fourthSection">
+        <a href="#firstSection" title="Contact">Contact</a>
+      </li>
+    </ul>
   </nav>
-
-  <body>
-    <div id="contact_form_holder">
+</header>
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScCJDyU63Rk7J2Oaff4NcRcgOeOKyDbsYAjFs3teg20TIlJ1g/viewform?embedded=true" width="640" height="2452" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </div>
-  </body>
 
-  <a class="button_floating_scroll_top" href="#header_bar">^</a>
 
-  <footer id="footer">
-    <div>All items copyright Jones Law Firm, P.C. 2021.</div>  <div>Attorney Advertising:  Past results do not guarantee future outcomes.</div>
-  </footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
+    <script  src="function_contact.js"></script>
 
+    <footer id="footer">
+      <div>All items copyright Jones Law Firm, P.C. 2021.</div>  <div>Attorney Advertising:  Past results do not guarantee future outcomes.</div>
+    </footer>
+
+</body>
 
 </html>
