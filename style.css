@@ -467,6 +467,14 @@ iframe {
 		font-size: 2rem;
 	}
 
+	#bryce_3_4 {
+		max-height: 40vh;
+	}
+
+	#pic_bryce_front {
+		max-height: 40vh;
+	}
+
 	#pic_court {
 		max-width: 85%;
 		height: auto;
@@ -477,6 +485,10 @@ iframe {
 		right: 5rem;
 	}
 
+	#contact-text {
+		z-index: 2;
+	}
+
 	iframe {
 		top: 70px;
 		position: absolute;
@@ -485,11 +497,16 @@ iframe {
 	}
 
 	#pic_lady_justice {
-		height: 50vh;
+		height: 40vh;
+	}
+
+	#cases-text {
+		z-index: 2;
 	}
 
 
 	#history_text {
+			z-index: 2;
 			top: 70px;
 			position: absolute;
 			width: 100%;
@@ -500,6 +517,7 @@ iframe {
 		top: 300px;
 		position: absolute;
 		width: 80%;
+		height: auto;
 		right: 8rem;
 	}
 
