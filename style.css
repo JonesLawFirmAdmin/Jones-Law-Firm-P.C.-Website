@@ -348,6 +348,18 @@ iframe {
 	width: 85%;
 }
 
+#call-now {
+	position: absolute;
+	bottom: 2rem;
+	left: 0.5rem;
+	background: var(--sage);
+	color: var(--brunswick-green);
+	font-weight: bolder;
+	padding: 0.5rem;
+	border: 2px solid var(--metallic-sunburst);
+	border-radius: 0.5rem;
+}
+
 /*tablet corrections:*/
 @media screen and (max-width: 800px) {
 
@@ -463,6 +475,10 @@ iframe {
 
 /*cell corrections:*/
 @media screen and (max-width: 415px) {
+	html {
+		font-size: 55%;
+	}
+
 	#motto_1 {
 		font-size: 2rem;
 	}
