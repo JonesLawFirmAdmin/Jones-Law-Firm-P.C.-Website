@@ -12,7 +12,7 @@ $('#fullpage').fullpage({
   navigation: true,
   slidesNavigation: true,
   controlArrows: false,
-  anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection', 'sixthSection'],
+  anchors: ['Lawyer Spotlight', 'Bio', 'Before Jones Law', 'Practice Areas', 'State Bar', 'Federal Courts'],
   menu: '#menu',
 
   afterLoad: function(anchorLink, index) {

@@ -12,7 +12,7 @@ $('#fullpage').fullpage({
   navigation: true,
   slidesNavigation: true,
   controlArrows: false,
-  anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection', 'sixthSection'],
+  anchors: ['Philosophy', 'Review1', 'Review2', 'Review3', 'Review4', 'Links'],
   menu: '#menu',
 
   afterLoad: function(anchorLink, index) {
