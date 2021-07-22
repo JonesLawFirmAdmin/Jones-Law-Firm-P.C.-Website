@@ -360,6 +360,11 @@ iframe {
 	border-radius: 0.5rem;
 }
 
+.external_link_logo {
+	height: 50px;
+	width: auto;
+}
+
 /*tablet corrections:*/
 @media screen and (max-width: 800px) {
 
@@ -477,6 +482,10 @@ iframe {
 @media screen and (max-width: 415px) {
 	html {
 		font-size: 55%;
+	}
+
+	#call-now {
+		padding: 0.1rem;
 	}
 
 	#motto_1 {
