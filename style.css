@@ -80,6 +80,17 @@ ul, li {
 	box-sizing: border-box;
 	border-bottom: 2px solid var(--brunswick-green);
 }
+.header-top-press {
+	background: #b7b5b4;
+	padding: 0 10px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 12;
+	box-sizing: border-box;
+	border-bottom: 2px solid var(--brunswick-green);
+}
+
 
 #img_logo {
 	height: 22vh;
@@ -212,6 +223,46 @@ h3 {
 	font-size: 4rem;
 }
 
+
+#pressReleaseButton{
+	position: absolute;
+	top: 6rem;
+	right: 3rem;
+	padding: 1rem;
+	background: var(--smoky-black);
+	color: var(--sage);
+	text-align: center;
+	box-sizing: border-box;
+	border-radius: .5rem;
+	border: 0.5rem solid var(--sage);
+	font-size: 2rem;
+	z-index: 50;
+}
+
+#pressReleaseBox {
+	margin-top: 22vh;
+	margin-bottom: 10rem;
+}
+
+#pressReleaseBox p {
+	font-size: 2rem;
+	margin: 3rem;
+}
+
+#pressReleaseBox a {
+	font-size: 2rem;
+	margin: 3rem;
+	color: var(--smoky-black);
+	background-color: var(--sage);
+}
+
+#pressReleaseBox h1 {
+	margin: 3rem;
+
+	font-size: 3rem;
+		line-height: inherit;
+		height: inherit;
+	}
 
 
 #history_text{
@@ -438,6 +489,10 @@ iframe {
 		top: 70px;
 	}
 
+	#pressReleaseBox {
+		margin-top: 75px;
+	}
+
 	nav li {
 		margin-top: 1px;
 	}
@@ -489,9 +544,9 @@ iframe {
 		bottom: 0.5rem;
 	}
 
-	#motto_1 {
-		font-size: 2rem;
-	}
+
+
+
 
 	#bryce_3_4 {
 		max-height: 40vh;
